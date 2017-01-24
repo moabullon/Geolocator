@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Google Geolocator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <section><input type="text" placeholder="Enter City, State" id="location"></section>
+    <button onclick="run()">GET COORDINATES</button>
+    <section>
+        <div>Latitude:
+            <span id="latcoordinates"></span>
+        </div>
+        <div>Longitude:
+            <span id="longcoordinates"></span>
+        </div>
+    </section>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script src="main.js"></script>
+</body>
 
-
-  </head>
-  <body>
-    <div class="nav-search">
-    <p>
-      City:<input id="city-info"></input>
-    </br>
-    <button onclick="run()">Submit</button>
-  </p>
-  </div>
-
-
-
-
-  </body>
 </html>
